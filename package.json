@@ -1,9 +1,25 @@
 {
-  "name": "eth-marketplace",
-  "version": "0.1.0",
-  "description": "An Ethereum Marketplace",
-  "author": "gregory@dappuniversity.com",
-  "dependencies": {
+  "name": "smart-contracts",
+  "version": "1.0.0",
+  "description": "ERC-721 Smartcontracts System for minting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmedbaig/ERC-721-Smart-Contracts.git"
+  },
+  "keywords": [
+    "eth"
+  ],
+  "author": "ahmedbaig",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmedbaig/ERC-721-Smart-Contracts/issues"
+  },
+  "homepage": "https://github.com/ahmedbaig/ERC-721-Smart-Contracts#readme",
+"dependencies": {
     "@openzeppelin/contracts": "^2.3.0",
     "babel-polyfill": "6.26.0",
     "babel-preset-env": "1.7.0",
