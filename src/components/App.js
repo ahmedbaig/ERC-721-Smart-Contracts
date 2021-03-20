@@ -37,10 +37,12 @@ class App extends Component {
       const contract = new web3.eth.Contract(abi, address)
       this.setState({ contract })
       const totalSupply = await contract.methods.totalSupply().call()
+      console.log(totalSupply)
       this.setState({ totalSupply })
       // Load Colors
       for (var i = 1; i <= totalSupply; i++) {
         const color = await contract.methods.colors(i - 1).call()
+        console.log(color)
         this.setState({
           colors: [...this.state.colors, color]
         })
