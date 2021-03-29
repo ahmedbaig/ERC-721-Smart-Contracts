@@ -7,7 +7,6 @@ contract Color is ERC721Full {
     mapping(string => bool) _colorExists;
 
     constructor() ERC721Full("Color", "COLOR") public {
-
     }
 
     function mint(string memory _color) public {
